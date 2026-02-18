@@ -13,7 +13,7 @@ while True:
     choice = int(input("Choose option: "))
     if(choice == 1):
         task = input("Add your task: ")
-        for task in Task:
+        if task in Task:
              print("Task already exists !")
         else:
          Task.append(task)
@@ -67,4 +67,5 @@ while True:
         print("Invalid option. Please choose 1-5.")
                   
                 
+
 
